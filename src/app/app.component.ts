@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { PersonInfoComponent } from './person-info/person-info.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [PersonInfoComponent],
+  template: `
+    <div style="text-align:center">
+      <h1>Резюме</h1>
+      <app-person-info></app-person-info>
+    </div>
+  `,
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'resume-app';
-}
+export class AppComponent {}

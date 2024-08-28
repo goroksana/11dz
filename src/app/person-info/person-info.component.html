@@ -1,0 +1,9 @@
+<div class="person-info">
+  <h2>{{ person.fullName }}</h2>
+  <p>Телефон: {{ person.phone }}</p>
+  <p>Email: {{ person.email }}</p>
+  <p>Місто: {{ person.city }}</p>
+  <p>Досвід роботи: {{ person.workExperience }}</p>
+  <p>Навички: {{ person.skills.join(', ') }}</p>
+  <img [src]="person.photoUrl" alt="Фото" />
+</div>
